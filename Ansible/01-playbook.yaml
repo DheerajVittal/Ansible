@@ -1,0 +1,9 @@
+- name: ping the server
+  hosts: test
+  become: yes
+#List of tasks/collections/modules
+  tasks:
+  -name: ping
+  ansible buildin.ping:
+  
+
