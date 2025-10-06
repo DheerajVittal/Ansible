@@ -1,7 +1,5 @@
 - name: Play level variables
   hosts: test
-  #connection: local_servers
-
   vars:
     course: ansible
     duration: 10HRS
@@ -9,5 +7,5 @@
   tasks:
   - name: print the course info
     ansible.builtin.debug:
-      msg: "course name is :{{ansible}}, duration: {{duration}}, trainer: {{trainer}}"
+      msg: "course name is: {{ansible}}, duration: {{duration}}, trainer: {{trainer}}"
 
