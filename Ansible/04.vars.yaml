@@ -1,6 +1,6 @@
 - name: Play level variables
-  hosts: local_servers
-  connection: local_servers
+  hosts: test
+  #connection: local_servers
 
   vars:
     course: ansible
