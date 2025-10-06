@@ -1,20 +1,21 @@
-- name: PLAY-01
+- name: Play-01
   hosts: test
-  # connection: localhost # Ansible will connect to localhost
   tasks:
   - name: Play-01 and Task-01
     ansible.builtin.debug:
-    msg: "Hello from Play-01 and Task-01"
+      msg: "Hello from Play-01 and Task-01"
 
   - name: Play-01 and Task-02
     ansible.builtin.debug:
-    msg: "Hello from Play-01 and Task-02"
+      msg: "Hello from Play-01 and Task-02"
 
-    tasks:
+- name: Play-02
+  hosts: test
+  tasks:    
     - name: Play-02 and Task-01
-    ansible.builtin.debug:
-    msg: Hello from Play-02 and Task-01
+      ansible.builtin.debug:
+      msg: "Hello from Play-02 and Task-01"
 
     - name: Play-02 and Task-02
-    ansible.builtin.debug:
-    msg: Hello from Play02 and Task-02
+      ansible.builtin.debug:
+      msg: "Hello from Play-02 and Task-02"
